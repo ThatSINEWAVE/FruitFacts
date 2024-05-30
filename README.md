@@ -4,6 +4,8 @@
 
 Welcome to FruitFacts, a simple web application where you can explore the nutritional facts of various fruits!
 
+![FruitFacts](https://github.com/ThatSINEWAVE/FruitFacts/assets/133239148/521e6157-6461-4283-9ed7-90d8e6b72857)
+
 </div>
 
 ## Usage
