@@ -1,0 +1,141 @@
+/* General styles */
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	background: linear-gradient(135deg, #FF6F61, #FFB6B9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #333;
+	overflow: hidden;
+}
+
+.container {
+	background: white;
+	padding: 30px 20px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 350px;
+	max-width: 90%;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: 0 0 10px;
+	color: #FF6F61;
+}
+
+p {
+	margin: 0 0 20px;
+	font-size: 1.1em;
+	color: #555;
+}
+
+select,
+button {
+	margin-top: 10px;
+	padding: 10px;
+	width: calc(100% - 20px);
+	border: 2px solid #FF6F61;
+	border-radius: 25px;
+	background: #FF6F61;
+	color: white;
+	font-size: 1em;
+	transition: background 0.3s, color 0.3s, border 0.3s;
+	cursor: pointer;
+}
+
+select {
+	background: white;
+	color: #FF6F61;
+	cursor: pointer;
+}
+
+select:focus,
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	background: white;
+	color: #FF6F61;
+	border: 2px solid #FF6F61;
+}
+
+#fruit-facts {
+	list-style-type: none;
+	padding: 0;
+	margin: 20px 0 0;
+	text-align: left;
+}
+
+#fruit-facts li {
+	font-size: 1em;
+	background: #FFB6B9;
+	color: white;
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 15px;
+}
+
+#facts-content {
+	display: none;
+}
+
+#main-content,
+#facts-content {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	background: transparent;
+}
+
+footer a {
+	margin: 0 15px;
+	display: inline-block;
+	font-size: 20px;
+	color: #FFF;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+#main-content.fadeOut,
+#facts-content.fadeOut {
+	animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+}
+
+#main-content.fadeIn,
+#facts-content.fadeIn {
+	animation: fadeIn 0.5s ease-in-out;
+}
